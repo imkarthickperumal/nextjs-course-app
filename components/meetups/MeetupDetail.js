@@ -1,15 +1,17 @@
-import React, { Fragment } from "react";
-import classes from './MeetupDetails.module.css';
+import classes from './MeetupDetail.module.css';
 
-const MeetupDetails = (props) => {
+function MeetupDetail(props) {
   return (
-    <Fragment>
-      <img src={props.image} alt={props.title} />
+    <section className={classes.detail}>
+      <img
+        src={props.image}
+        alt={props.title}
+      />
       <h1>{props.title}</h1>
       <address>{props.address}</address>
       <p>{props.description}</p>
-    </Fragment>
+    </section>
   );
-};
+}
 
-export default MeetupDetails;
+export default MeetupDetail;
