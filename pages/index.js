@@ -1,3 +1,5 @@
+// example : our-domain.com/homepage
+
 import MeetupList from '../components/meetups/MeetupList';
 
 const DUMMY_MEETUPS = [
@@ -17,7 +19,7 @@ const DUMMY_MEETUPS = [
   }
 ];
 
-function HomePage() {
+const HomePage=()=> {
   return <MeetupList meetups={DUMMY_MEETUPS} />
 }
 
