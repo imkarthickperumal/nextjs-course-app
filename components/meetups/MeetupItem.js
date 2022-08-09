@@ -1,8 +1,7 @@
-import React from "react";
-import Card from "../ui/Card";
-import classes from "./MeetupItem.module.css";
+import Card from '../ui/Card';
+import classes from './MeetupItem.module.css';
 
-const MeetupItem = (props) => {
+function MeetupItem(props) {
   return (
     <li className={classes.item}>
       <Card>
@@ -19,6 +18,6 @@ const MeetupItem = (props) => {
       </Card>
     </li>
   );
-};
+}
 
 export default MeetupItem;
